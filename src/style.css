@@ -85,6 +85,9 @@ main p {
   font-size: 16px;
   color: black;
 }
+.text-center {
+  text-align: center;
+}
 .button {
   display: block;
   color: white;

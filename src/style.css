@@ -12,6 +12,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -49,11 +50,38 @@ header a {
   padding: 10px 20px;
   margin-top: 15px;
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+main {
+  background-color: white;
 }
 
+main img {
+  max-width: 100%;
+}
+main h2 {
+  font-size: 48px;
+  margin: 0;
+}
+main h3 {
+  font-size: 18px;
+  color: grey;
+  margin: 0;
+  margin-bottom: 20px;
+}
+main p {
+  font-family: "DM Sans", serif;
+  font-size: 16px;
+  color: black;
+}
+.grid {
+  display: grid;
+  grid-gap: 20px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-three-column-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/images/mathias-owa-martins-2mbQ1sxVZ0Q-unsplash.jpg");
@@ -64,7 +92,6 @@ footer {
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -96,5 +123,15 @@ footer a {
   header h3 {
     font-size: 8px;
     letter-spacing: 5px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  section {
+    padding: 30px;
+  }
+  main img {
+    margin-bottom: 30px;
   }
 }
